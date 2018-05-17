@@ -9,11 +9,12 @@ class AlgorithmBinaire implements Algorithm {
         Livre midLivre = list[midIndex];
 
         if (midLivre.key == key) return midLivre;
-        if (list.length == 1) return null;
 
         if (midLivre.key > key) {
+            if (midIndex == 0) return null;
             return iterate(Arrays.copyOfRange(list, 0, midIndex), key);
         } else {
+            if (list.length == midIndex + 1) return null;
             return iterate(Arrays.copyOfRange(list, midIndex + 1, list.length), key);
         }
     }

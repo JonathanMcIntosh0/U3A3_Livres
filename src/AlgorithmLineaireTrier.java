@@ -1,4 +1,4 @@
-class AlgorithmLineaireTrier implements Algorithm {
+public class AlgorithmLineaireTrier implements Algorithm {
     private static final String NAME = "Algorithme linéaire Trier";
 
     @Override

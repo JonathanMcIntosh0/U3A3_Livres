@@ -1,8 +1,8 @@
 public class Livre {
-    final String name;
-    final int key;
+    public final String name;
+    public final int key;
 
-    Livre(String name, int key) {
+    public Livre(int key, String name) {
         this.name = name;
         this.key = key;
     }

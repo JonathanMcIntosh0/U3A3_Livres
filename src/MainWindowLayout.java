@@ -1,5 +1,4 @@
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -101,5 +100,13 @@ class MainWindowLayout extends VBox {
 
     Algorithm getSelectedAlg() {
         return cbAlg.getValue();
+    }
+
+    TextField getTextField() {
+        return tfKey;
+    }
+
+    void setMsg(String msg) {
+        txtMessage.setText(msg);
     }
 }
